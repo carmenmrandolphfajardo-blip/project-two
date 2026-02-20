@@ -3,6 +3,10 @@ body {
     background-color: #64CEB5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .dropdown {
     position: relative;
     float: right;
@@ -88,4 +92,35 @@ h2 {
     font-weight: bold;
     font-size: 3em;
     margin-top: 2em;
+}
+
+.about-us-container {
+    background-color: #EFEFD0;
+    padding: 2em;
+    width: 20em;
+    height: auto;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-us-container img {
+    width: 100%;
+    height: auto;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    color: #0F7173;
+    text-align: center;
+    font-family: "Vinila Variable", sans-serif;
+    font-size: 2em;
 }
