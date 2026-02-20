@@ -3,10 +3,38 @@ body {
     background-color: #6DB3C5;
 }
 
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 5em;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
 h1 {
-    color: #004E89;
+    color: #EFEFD0;
     text-align: center;
     font-family: "Tekton Pro", sans-serif;
-    font-size: 3em;
     font-weight: bold;
+    font-size: 6em;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
+    position: absolute;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 40em;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
