@@ -3,36 +3,26 @@ body {
     background-color: #64CEB5;
 }
 
-.logo {
-    display: flex;
-    justify-content: flex-start;
-    width: 5em;
-    height: auto;
-}
-
-.logo img {
-    width: 100%;
-    height: auto;
-}
-
 .dropdown {
     position: relative;
-    display: inline-block;
+    float: right;
 }
 
 .dropbtn {
     background-color: #F4B07B;
     color: #0F7173;
-    padding: 2em;
     font-family: "Vinila Pro", sans-serif;
     font-size: 1em;
-    display: flex;
-    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    border: none;
+    width: 10em;
+    height: auto;
 }
 
 .dropdown-content {
-    display: flex;
-    flex-direction: column;
+    display: none;
     position: absolute;
     background-color: #EFEFD0;
     min-width: 10em;
@@ -47,14 +37,15 @@ body {
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 1.5em 2em;
+    color: #F85A4F;
+    padding: 1em 2em;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
     background-color: #caeaee;
+    color: #0F7173;
 }
 
 .dropdown-content a:focus {
@@ -63,6 +54,7 @@ body {
 
 .dropdown:hover .dropbtn {
     background-color: #F85A4F;
+    color: #EFEFD0;
 }
 
 h1 {
@@ -79,7 +71,7 @@ h1 {
     position: relative;
     display: flex;
     justify-content: center;
-    height: 40em;
+    height: 36em;
     width: 100%;
 }
 
