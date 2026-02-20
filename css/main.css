@@ -1,6 +1,6 @@
-/* Place CSS styles here */
+
 body {
-    background-color: #6DB3C5;
+    background-color: #64CEB5;
 }
 
 .logo {
@@ -13,6 +13,56 @@ body {
 .logo img {
     width: 100%;
     height: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #F4B07B;
+    color: #0F7173;
+    padding: 2em;
+    font-family: "Vinila Pro", sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #EFEFD0;
+    min-width: 10em;
+    box-shadow: #000000 0.1em 0.1em 0.2em;
+    z-index: 1;
+    font-family: "Vinila Pro", sans-serif;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 1.5em 2em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #caeaee;
+}
+
+.dropdown-content a:focus {
+    border: 2px solid #F85A4F;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #F85A4F;
 }
 
 h1 {
@@ -38,3 +88,4 @@ h1 {
     height: auto;
     object-fit: cover;
 }
+
