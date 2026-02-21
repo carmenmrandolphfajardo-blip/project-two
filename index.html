@@ -77,55 +77,59 @@
       </div>
     </div>
   <h2 id="reserve">Reserve</h2>
-  <form action="./submit-form" method="get">
-    <label for="bookingDateTime">Booking Date and Time:</label>
-    <input type="datetime-local" id="bookingDateTime" name="bookingDateTime" required>
-    <label for="table-selection">Select table:</label>
-      <select id="table-selection" name="table-selection" required>
-        <optgroup label="row-a">
-          <option value="table1">Table 1</option>
-          <option value="table2">Table 2</option>
-          <option value="table3">Table 3</option>
-          <option value="table4">Table 4</option>
-          <option value="table5">Table 5</option>
-          <option value="table6">Table 6</option>
-        </optgroup>
-        <optgroup label="row-b">
-          <option value="table1">Table 1</option>
-          <option value="table2">Table 2</option>
-          <option value="table3">Table 3</option>
-          <option value="table4">Table 4</option>
-          <option value="table5">Table 5</option>
-          <option value="table6">Table 6</option>
-        </optgroup>
-      </select>
-    <label for="numGuests">Number of Guests:</label>
-    <input type="number" id="numGuests" name="numGuests" min="1" required>
-    <label for="reservation-name">Reservation Name:</label>
-    <input type="text" id="reservation-name" name="reservation-name" required>
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" autocomplete="tel">
-    <button type="submit">Submit</button>
-  </form>
+  <div class="reservation-form">
+    <form action="./submit-form" method="get">
+      <label for="bookingDateTime">Booking Date and Time:</label>
+      <input type="datetime-local" id="bookingDateTime" name="bookingDateTime" required>
+      <label for="table-selection">Select table:</label>
+        <select id="table-selection" name="table-selection" required>
+          <optgroup label="beach-side">
+            <option value="table1">Table 1</option>
+            <option value="table2">Table 2</option>
+            <option value="table3">Table 3</option>
+            <option value="table4">Table 4</option>
+            <option value="table5">Table 5</option>
+            <option value="table6">Table 6</option>
+          </optgroup>
+          <optgroup label="palapa">
+            <option value="table1">Table 1</option>
+            <option value="table2">Table 2</option>
+            <option value="table3">Table 3</option>
+            <option value="table4">Table 4</option>
+            <option value="table5">Table 5</option>
+            <option value="table6">Table 6</option>
+          </optgroup>
+        </select>
+      <label for="numGuests">Number of Guests:</label>
+      <input type="number" id="numGuests" name="numGuests" min="1" required>
+      <label for="reservation-name">Reservation Name:</label>
+      <input type="text" id="reservation-name" name="reservation-name" required>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" autocomplete="tel">
+      <button type="submit" value="submit" class="submit">Confirm</button>
+    </form>
+  </div>
   <h2 id="review">Review</h2>
   <p>We value your feedback! Please rate your experience and leave a review.</p>
+  <div class="review-form">
   <form action="./submit-form" method="get">
-    <label for="1-star">1</label>
-    <input type="radio" id="1-star" name="rating" value="1">
-    <label for="2-star">2</label>
-    <input type="radio" id="2-star" name="rating" value="2">
-    <label for="3-star">3</label>
-    <input type="radio" id="3-star" name="rating" value="3">
-    <label for="4-star">4</label>
-    <input type="radio" id="4-star" name="rating" value="4">
-    <label for="5-star">5</label>
-    <input type="radio" id="5-star" name="rating" value="5">
-  </form>
-  <form action="./submit-form" method="get">
-    <label for="review-text">Write a review:</label>
-    <textarea id="review-text" name="review-text" rows="4" cols="50" placeholder="Write your review here..."></textarea>
-    <button type="submit">Submit</button>
-  </form>
+      <label for="1-star">1</label>
+      <input type="radio" id="1-star" name="rating" value="1">
+      <label for="2-star">2</label>
+      <input type="radio" id="2-star" name="rating" value="2">
+      <label for="3-star">3</label>
+      <input type="radio" id="3-star" name="rating" value="3">
+      <label for="4-star">4</label>
+      <input type="radio" id="4-star" name="rating" value="4">
+      <label for="5-star">5</label>
+      <input type="radio" id="5-star" name="rating" value="5">
+    </form>
+    <form action="./submit-form" method="get">
+      <label for="review-text">Write a review:</label>
+      <textarea id="review-text" name="review-text" rows="4" cols="50" placeholder="Write your review here..."></textarea>
+      <button type="submit" value="submit" class="submit">Submit</button>
+    </form>
+  </div>
 </main>
 <footer>
   <a href="#">Contact Us</a>

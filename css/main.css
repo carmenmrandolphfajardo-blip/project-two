@@ -213,18 +213,43 @@ h3 {
     height: auto;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #EFEFD0;
+.reservation-form {
     padding: 2em;
-    width: 20em;
-    height: 25em;
     margin: 2em auto;
     color: #0d6668;
     text-align: center;
     font-family: "Vinila Variable", sans-serif;
     font-size: 1.5em;
+    background-color: #EFEFD0;;
 }
+
+.review-form {
+    font-family: "Vinila Variable", sans-serif;
+    color: #0d6668;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2em;
+    margin: 2em auto;
+    background-color: #EFEFD0;
+}
+
+.submit {
+    background-color: #F6BB8E;
+    color: #0d6668;
+    font-family: "Vinila Pro", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em 2em;
+    border-radius: 1em;
+    border: none;
+}
+
+.submit:hover {
+    background-color: #F85A4F;
+    color: #EFEFD0;
+}
+
+.submit:focus {
+    border: 2px solid #F85A4F;
+}   
