@@ -43,6 +43,7 @@ html {
 }
 
 .dropdown-content a {
+    font-size: 1em;
     color: #F85A4F;
     padding: 1em 2em;
     text-decoration: none;
@@ -68,7 +69,7 @@ html {
 }
 
 h1 {
-    color: #EFEFD0;
+    color: #64CEB5;
     text-align: center;
     font-family: "Tekton Pro", sans-serif;
     font-weight: bold;
@@ -134,11 +135,16 @@ p {
 }
 
 a {
+    background-color: #F6BB8E;
     color: #0d6668;
+    font-family: "Vinila Pro", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
     text-align: center;
-    font-family: "Vinila Variable", sans-serif;
+    padding: 1em 2em;
+    border-radius: 1em;
+    border: none;
     text-decoration: none;
-    font-size: 1.5em;
     margin-top: 1em;
     display: flex;
     justify-content: center;
@@ -205,4 +211,20 @@ h3 {
 .menu-content img {
     width: 100%;
     height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #EFEFD0;
+    padding: 2em;
+    width: 20em;
+    height: 25em;
+    margin: 2em auto;
+    color: #0d6668;
+    text-align: center;
+    font-family: "Vinila Variable", sans-serif;
+    font-size: 1.5em;
 }
