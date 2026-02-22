@@ -134,27 +134,37 @@ p {
     justify-content: center;
 }
 
-a {
+.menu-pdf {
     background-color: #F6BB8E;
+    padding: 1em 2em;
+    border-radius: 1em;
+    border: none;
+    margin: 1em;
+    width: 10em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.menu-pdf a{
     color: #0d6668;
     font-family: "Vinila Pro", sans-serif;
     font-size: 2em;
     font-weight: bold;
     text-align: center;
-    padding: 1em 2em;
-    border-radius: 1em;
-    border: none;
     text-decoration: none;
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
 }
 
-a:hover {
+.menu-pdf a:hover {
     color: #EFEFD0;
 }
 
-a:focus {
+.menu-pdf a:focus {
     color: #F85A4F;
 }
 
@@ -220,7 +230,7 @@ h3 {
     text-align: center;
     font-family: "Vinila Variable", sans-serif;
     font-size: 1.5em;
-    background-color: #EFEFD0;;
+    background-color: #EFEFD0;
 }
 
 .review-form {
@@ -253,3 +263,27 @@ h3 {
 .submit:focus {
     border: 2px solid #F85A4F;
 }   
+
+footer {
+    background-color: #0d6668;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer a {
+    color: #EFEFD0;
+    font-family: "Vinila Variable", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #F6BB8E;
+}
+
+footer a:focus {
+    color: #F85A4F;
+}
