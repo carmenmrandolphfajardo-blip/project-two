@@ -46,12 +46,12 @@
 <main>
   <h2 id="about-us">About Us</h2>
   <p>We're a family-owned business based in La Manzanilla, Mexico. Located right on the beach!</p>
-  <p>Restaurant hours: 8 a.m.-8 p.m.<br>
-  Breakfast: 8 a.m.-1 p.m.<br>
-  Lunch/dinner: 12 p.m.-7:30 p.m.</p>
-  <p>Happy hour: 4 p.m.-6 p.m. Monday through Friday</p>
+  <p>Restaurant hours: 8 a.m.- 8 p.m.<br>
+  Breakfast: 8 a.m.- 1 p.m.<br>
+  Lunch/dinner: 12 p.m.- 7:30 p.m.<br>
+  Happy hour: 3 p.m.- 4 p.m. Monday through Friday</p>
   <div class="daily-specials">
-    <p>Daily Specials:</p>
+    <h3>Daily Specials:</h3>
     <ul>
       <li>Monday: Mole</li>
       <li>Wednesday: Skewers</li>
@@ -62,7 +62,7 @@
     </ul>
   </div>
   <div class="music-schedule">
-    <p>Live music every day from 5 p.m -7 p.m.</p>
+    <h3>Live Music Schedule:</h3>
     <ul>
       <li>Monday: Yotzin</li>
       <li>Tuesday: Salvador "Chava"</li>
@@ -76,15 +76,15 @@
   <div class="about-us-container">
     <div class="about-us-content">
       <img src="./img/beach.jpg" alt="">
-      <h3>Our restaurant</h3>
+      <h4>Our restaurant</h4>
     </div>
     <div class="about-us-content">
       <img src="./img/crew.jpg" alt="">
-      <h3>Our crew</h3>
+      <h4>Our crew</h4>
     </div>
     <div class="about-us-content">
       <img src="./img/merch.jpg" alt="Crocodile bar branded shotglass and bottle opener">
-      <h3>Our merchandise</h3>
+      <h4>Our merchandise</h4>
     </div>
   </div>
   <h2 id="menu">Menu</h2>
@@ -94,15 +94,15 @@
     <div class="menu-container">
       <div class="menu-content">
         <img src="./img/tacos.jpg" alt="">
-        <h3>Fish tacos</h3>
+        <h4>Fish tacos</h4>
       </div>
       <div class="menu-content">
         <img src="./img/chile-relleno.jpg" alt="">
-        <h3>Chile Relleno</h3>
+        <h4>Chile Relleno</h4>
       </div>
       <div class="menu-content">
         <img src="./img/sandwich.jpg" alt="">
-        <h3>Breakfast sandwich</h3>
+        <h4>Breakfast sandwich</h4>
       </div>
     </div>
   <h2 id="reserve">Reserve</h2>
@@ -142,6 +142,8 @@
   <p>We value your feedback! Please rate your experience and leave a review.</p>
   <div class="review-form">
   <form action="./submit-form" method="get">
+    <fieldset>
+      <legend>Rate your experience:</legend>
       <label for="1-star">1</label>
       <input type="radio" id="1-star" name="rating" value="1">
       <label for="2-star">2</label>
@@ -152,6 +154,7 @@
       <input type="radio" id="4-star" name="rating" value="4">
       <label for="5-star">5</label>
       <input type="radio" id="5-star" name="rating" value="5">
+      </fieldset>
     </form>
     <form action="./submit-form" method="get">
       <label for="review-text">Write a review:</label>

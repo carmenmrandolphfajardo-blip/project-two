@@ -69,7 +69,7 @@ html {
 }
 
 h1 {
-    color: #64CEB5;
+    color: #EFEFD0;
     text-align: center;
     font-family: "Tekton Pro", sans-serif;
     font-weight: bold;
@@ -192,7 +192,7 @@ p {
     height: auto;
 }
 
-h3 {
+h4 {
     color: #0d6668;
     text-align: center;
     font-family: "Vinila Variable", sans-serif;
