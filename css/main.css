@@ -68,7 +68,15 @@ html {
     border: 2px solid #F85A4F;
 }
 
-h1 {
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 36em;
+    width: 100%;
+}
+
+.hero h1 {
     color: #EFEFD0;
     text-align: center;
     font-family: tekton-pro, sans-serif; 
@@ -79,14 +87,6 @@ h1 {
     padding: 1em;
     border: none;
     margin: 0;
-}
-
-.hero {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 36em;
-    width: 100%;
 }
 
 .hero button {
@@ -372,17 +372,26 @@ footer a:focus {
     color: #F85A4F;
 }
 
-.hero {
-    position: relative;
+.home {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 36em;
-    width: 100%;
+    justify-content: space-evenly;
+}
+
+.home h1 {
+    color: #0d6668;
+    text-align: center;
+    font-family: tekton-pro, sans-serif; 
+    font-weight: bold;
+    font-size: 6em;
+    padding: 1em;
+    border: none;
+    margin: 0;
 }
 
 .home button {
-    position: absolute;
-    bottom: 2em;
     background-color: #F6BB8E;
     color: #0d6668;
     font-family: vinila-variable, sans-serif;
@@ -392,6 +401,7 @@ footer a:focus {
     padding: 1em 2em;
     border-radius: 1em;
     border: none;
+    margin: 1em auto;
 }
 
 .home button:hover {
