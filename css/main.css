@@ -129,7 +129,9 @@ p {
     text-align: center;
     font-family: "Vinila Variable", sans-serif;
     font-size: 1.5em;
-    margin-top: 1em;
+    padding: 1em;
+    border: none;
+    margin: 1em auto;
     display: flex;
     justify-content: center;
 }
@@ -182,7 +184,8 @@ p {
     justify-content: space-evenly;
     background-color: #EFEFD0;
     padding: 2em;
-    width: 20em;
+    max-width: 20em;
+    width: 100%;
     height: 25em;
     margin: 2em auto;
 }
@@ -190,6 +193,17 @@ p {
 .about-us-content img {
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 480px) {
+    .about-us-container {
+        flex-direction: column;
+    }
+    
+    .about-us-content {
+        width: 80%;
+        height: auto;
+    }
 }
 
 h4 {
@@ -213,7 +227,8 @@ h4 {
     justify-content: space-evenly;
     background-color: #EFEFD0;
     padding: 2em;
-    width: 20em;
+    max-width: 20em;
+    width: 100%;
     height: 25em;
     margin: 2em auto;
 }
@@ -221,6 +236,17 @@ h4 {
 .menu-content img {
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 480px) {
+    .menu-container {
+        flex-direction: column;
+    }
+    
+    .menu-content {
+        width: 80%;
+        height: auto;
+    }
 }
 
 .reservation-form {
