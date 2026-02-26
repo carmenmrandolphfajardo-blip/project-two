@@ -1,6 +1,7 @@
 
 body {
     background-color: #64CEB5;
+    font-size: 16px;
 }
 
 html {
@@ -15,13 +16,13 @@ html {
 .dropbtn {
     background-color: #F6BB8E;
     color: #0d6668;
-    font-family: "Vinila Pro", sans-serif;
+    font-family: vinila-variable, sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
-    padding: 1em 2em;
+    padding: 10%;
     border: none;
-    width: 10em;
+    width: 200px;
     height: auto;
 }
 
@@ -29,10 +30,10 @@ html {
     display: none;
     position: absolute;
     background-color: #EFEFD0;
-    min-width: 10em;
-    box-shadow: #000000 0.1em 0.1em 0.2em;
+    min-width: 200px;
+    box-shadow: #000000 5px 5px 10px;
     z-index: 1;
-    font-family: "Vinila Variable", sans-serif;
+    font-family: vinila-variable, sans-serif;
     font-size: 1.5em;
     text-align: center;
 }
@@ -45,7 +46,7 @@ html {
 .dropdown-content a {
     font-size: 1em;
     color: #F85A4F;
-    padding: 1em 2em;
+    padding: 10%;
     text-decoration: none;
     display: block;
 }
@@ -68,6 +69,32 @@ html {
     border: 2px solid #F85A4F;
 }
 
+@media (max-width: 480px) {
+    .dropbtn {
+        font-size: 1em;
+        width: 150px;
+    }
+    .dropdown-content {
+        font-size: 1em;
+        min-width: 150px;
+    }
+    .dropdown-content a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .dropbtn {
+        font-size: 1em;
+    }
+    .dropdown-content {
+        font-size: 1em;
+    }
+    .dropdown-content a {
+        font-size: 1em;
+    }
+}   
+
 .hero {
     position: relative;
     display: flex;
@@ -82,25 +109,26 @@ html {
     font-family: tekton-pro, sans-serif; 
     font-weight: bold;
     font-size: 6em;
-    text-shadow: #000000 0.1em 0.1em 0.2em;
+    text-shadow: #000000 4px 6px 2px;
     position: absolute;
-    padding: 1em;
+    padding: 10%;
     border: none;
     margin: 0;
 }
 
 .hero button {
     position: absolute;
-    bottom: 2em;
+    bottom: 4%;
     background-color: #F6BB8E;
     color: #0d6668;
     font-family: vinila-variable, sans-serif;
     font-size: 2em;
     font-weight: bold;
     text-align: center;
-    padding: 1em 2em;
-    border-radius: 1em;
+    padding: 2%;
+    border-radius: 10px;
     border: none;
+    margin: 0;
 }
 
 .hero button:hover {
@@ -123,7 +151,7 @@ html {
         font-size: 4em;
     }
     .hero button {
-        font-size: 1.5em;
+        font-weight: 600;
     }
 }
 
@@ -142,9 +170,9 @@ h2 {
     font-family: vinila-variable, sans-serif;
     font-weight: bold;
     font-size: 3em;
-    padding: 1em;
+    padding: 2%;
     border: none;
-    margin: 1em auto;
+    margin: 2% auto;
 }
 
 p {
@@ -152,20 +180,20 @@ p {
     text-align: center;
     font-family: vinila-variable, sans-serif;
     font-size: 1.5em;
-    padding: 1em;
+    padding: 2%;
     border: none;
-    margin: 1em auto;
+    margin: 2% auto;
     display: flex;
     justify-content: center;
 }
 
 .info {
     background-color: #EFEFD0;
-    padding: 1em;
+    padding: 2%;
     border: none;
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 2em;
+    margin-top: 10%;
 }
 
 h3 {
@@ -173,14 +201,14 @@ h3 {
     text-align: center;
     font-family: vinila-variable, sans-serif;
     font-size: 2em;
-    padding: 1em;
+    padding: 2%;
     border: none;
-    margin: 1em auto;
+    margin: 2% auto;
 }
 
 .daily-specials {
     background-color: #EFEFD0;
-    padding: 1em;
+    padding: 5%;
     border: none;
     margin-left: 30%;
     margin-right: 30%;
@@ -188,11 +216,11 @@ h3 {
 
 .music-schedule {
     background-color: #EFEFD0;
-    padding: 1em;
+    padding: 5%;
     border: none;
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 2em;
+    margin-top: 10%;
 }
 
 ul {
@@ -201,6 +229,54 @@ ul {
     text-align: left;
     font-family: vinila-variable, sans-serif;
     font-size: 1.5em;
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    .info {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .daily-specials {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .music-schedule {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    ul {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    .info {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .daily-specials {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .music-schedule {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    ul {
+        font-size: 1em;
+    }
 }
 
 .about-us-container {
@@ -216,11 +292,11 @@ ul {
     align-items: center;
     justify-content: space-evenly;
     background-color: #EFEFD0;
-    padding: 2em;
+    padding: 5%;
     max-width: 20em;
     width: 100%;
     height: 25em;
-    margin: 2em auto;
+    margin: 5% auto;
 }
 
 .about-us-content img {
@@ -237,11 +313,11 @@ h4 {
 
 .visit {
     background-color: #F6BB8E;
-    padding: 1em 2em;
-    border-radius: 1em;
+    padding: 2%;
+    border-radius: 10px;
     border: none;
-    margin: 1em;
-    width: 10em;
+    margin: 2%;
+    width: 200px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -269,30 +345,34 @@ h4 {
 }
 
 @media (max-width: 480px) {
-    .h2 {
-        font-size: 2em;
-    }
     .about-us-container {
         flex-direction: column;
     }
-    
     .about-us-content {
         width: 80%;
         height: auto;
+    }
+    .visit {
+        width: 150px;
+    }
+    .visit a {
+        font-size: 1em;
     }
 }
 
 @media (max-width: 768px) {
-    .h2 {
-        font-size: 2em;
-    }
     .about-us-container {
         flex-direction: column;
     }
-    
     .about-us-content {
         width: 80%;
         height: auto;
+    }
+    .visit {
+        width: 180px;
+    }
+    .visit a {
+        font-size: 1.5em; 
     }
 }
 
@@ -309,20 +389,20 @@ h4 {
     align-items: center;
     justify-content: space-evenly;
     background-color: #EFEFD0;
-    padding: 2em;
+    padding: 5%;
     max-width: 20em;
     width: 100%;
     height: 25em;
-    margin: 2em auto;
+    margin: 5% auto;
 }
 
 .menu-pdf {
     background-color: #F6BB8E;
-    padding: 1em 2em;
-    border-radius: 1em;
+    padding: 2%;
+    border-radius: 10px;
     border: none;
-    margin: 1em;
-    width: 10em;
+    margin: 2%;
+    width: 200px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -358,10 +438,15 @@ h4 {
     .menu-container {
         flex-direction: column;
     }
-    
     .menu-content {
         width: 80%;
         height: auto;
+    }
+    .menu-pdf {
+        width: 150px;
+    }
+    .menu-pdf a {
+        font-size: 1.5em;
     }
 }
 
@@ -371,11 +456,16 @@ h4 {
     }
     .menu-container{
         flex-direction: column;
-    }
-    
+    } 
     .menu-content {
         width: 80%;
         height: auto;
+    }
+    .menu-pdf {
+        width: 180px;
+    }
+    .menu-pdf a {
+        font-size: 2em;
     }
 }
 
@@ -489,3 +579,4 @@ footer a:focus {
 .home button:focus {
     border: 2px solid #F85A4F;
 }
+
