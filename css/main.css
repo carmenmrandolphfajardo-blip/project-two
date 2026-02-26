@@ -709,7 +709,19 @@ footer a:focus {
     font-size: 6em;
     padding: 5%;
     border: none;
-    margin: 0;
+    margin: 5% auto;
+}
+
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 5em;
+    }
 }
 
 .home button {
