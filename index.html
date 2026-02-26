@@ -93,7 +93,7 @@
     </div>
   </div>
   <div class="visit">
-    <a href="https://maps.app.goo.gl/rLhmUS3i8gzukKnA7" target="_blank">Visit us!</a>
+    <button onclick="window.open('https://maps.app.goo.gl/rLhmUS3i8gzukKnA7', '_blank')">Visit us!</button>
   </div>
   <h2 id="menu">Menu</h2>
     <div class="menu-container">
@@ -111,7 +111,7 @@
       </div>
     </div>
   <div class="menu-pdf">
-    <a href="./Croc nuevo menu 2025 .pdf" target="_blank">Download our full menu!</a>
+    <button onclick="window.open('./Croc nuevo menu 2025 .pdf', '_blank')">Download our full menu!</button>
   </div>
   <h2 id="reserve">Reserve</h2>
   <div class="reservation-form">
@@ -142,7 +142,7 @@
       <label for="reservation-name">Reservation Name:</label>
       <input type="text" id="reservation-name" name="reservation-name" required><br><br>
       <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" autocomplete="tel">
+      <input type="tel" id="phone" name="phone" autocomplete="tel" required>
       <button type="submit" value="submit" class="submit">Confirm</button>
     </form>
   </div>
@@ -163,8 +163,6 @@
       <label for="5-star">5</label>
       <input type="radio" id="5-star" name="rating" value="5">
       </fieldset><br>
-    </form>
-    <form action="./thank-you.html">
       <label for="review-text">Write a review:</label><br><br>
       <textarea id="review-text" name="review-text" rows="4" cols="50" placeholder="Write your review here..." required></textarea>
       <button type="submit" value="submit" class="submit">Submit</button>
