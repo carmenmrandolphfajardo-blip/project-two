@@ -45,13 +45,18 @@
 </header>
 <main>
   <h2 id="about-us">About Us</h2>
-  <p>We're a family-owned business based in La Manzanilla, Mexico. Located right on the beach!</p>
-  <p>Restaurant hours: 8 a.m.- 8 p.m.<br>
-  Breakfast: 8 a.m.- 1 p.m.<br>
-  Lunch/dinner: 12 p.m.- 7:30 p.m.<br>
-  Happy hour: 3 p.m.- 4 p.m. Monday through Friday</p>
+  <p>We're a family-owned business based in La Manzanilla, Mexico.</p>
+  <div class="info">
+    <ul>
+      <li>Restaurant hours: 8 a.m.- 8 p.m.</li>
+      <li>Breakfast: 8 a.m.- 1 p.m.</li>
+      <li></li>Lunch/dinner: 12 p.m.- 7:30 p.m.</li>
+      <li>Happy hour: 3 p.m.- 4 p.m. Monday through Friday</li>
+      <li>Live music: 5 p.m. - 7 p.m. Seven days a week</li>
+    </ul>
+  </div>
+  <h3>Daily Specials:</h3>
   <div class="daily-specials">
-    <h3>Daily Specials:</h3>
     <ul>
       <li>Monday: Mole</li>
       <li>Wednesday: Skewers</li>
@@ -61,8 +66,8 @@
       <li>Sunday: Shrimp-burger</li>
     </ul>
   </div>
+  <h3>Music Schedule:</h3>
   <div class="music-schedule">
-    <h3>Live Music Schedule:</h3>
     <ul>
       <li>Monday: Yotzin</li>
       <li>Tuesday: Salvador "Chava"</li>
@@ -87,10 +92,10 @@
       <h4>Our merchandise</h4>
     </div>
   </div>
-  <h2 id="menu">Menu</h2>
-  <div class="menu-pdf">
-    <a href="./Croc nuevo menu 2025 .pdf" target="_blank">Download our full menu!</a>
+  <div class="visit">
+    <a href="https://maps.app.goo.gl/rLhmUS3i8gzukKnA7" target="_blank">Visit us!</a>
   </div>
+  <h2 id="menu">Menu</h2>
     <div class="menu-container">
       <div class="menu-content">
         <img src="./img/tacos.jpg" alt="">
@@ -105,11 +110,14 @@
         <h4>Breakfast sandwich</h4>
       </div>
     </div>
+  <div class="menu-pdf">
+    <a href="./Croc nuevo menu 2025 .pdf" target="_blank">Download our full menu!</a>
+  </div>
   <h2 id="reserve">Reserve</h2>
   <div class="reservation-form">
     <form action="./reservation-conf.html">
       <label for="bookingDateTime">Booking Date and Time:</label>
-      <input type="datetime-local" id="bookingDateTime" name="bookingDateTime" required>
+      <input type="datetime-local" id="bookingDateTime" name="bookingDateTime" required><br><br>
       <label for="table-selection">Select table:</label>
         <select id="table-selection" name="table-selection" required>
           <optgroup label="beach-side">
@@ -128,11 +136,11 @@
             <option value="table5">Table 5</option>
             <option value="table6">Table 6</option>
           </optgroup>
-        </select>
+        </select><br><br>
       <label for="numGuests">Number of Guests:</label>
-      <input type="number" id="numGuests" name="numGuests" min="1" required>
+      <input type="number" id="numGuests" name="numGuests" min="1" required><br><br>
       <label for="reservation-name">Reservation Name:</label>
-      <input type="text" id="reservation-name" name="reservation-name" required>
+      <input type="text" id="reservation-name" name="reservation-name" required><br><br>
       <label for="phone">Phone Number:</label>
       <input type="tel" id="phone" name="phone" autocomplete="tel">
       <button type="submit" value="submit" class="submit">Confirm</button>
@@ -154,10 +162,10 @@
       <input type="radio" id="4-star" name="rating" value="4">
       <label for="5-star">5</label>
       <input type="radio" id="5-star" name="rating" value="5">
-      </fieldset>
+      </fieldset><br>
     </form>
     <form action="./thank-you.html">
-      <label for="review-text">Write a review:</label>
+      <label for="review-text">Write a review:</label><br><br>
       <textarea id="review-text" name="review-text" rows="4" cols="50" placeholder="Write your review here..."></textarea>
       <button type="submit" value="submit" class="submit">Submit</button>
     </form>
